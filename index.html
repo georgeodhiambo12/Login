@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Login to Your Account</h2>
+  <form id="loginForm">
+    <input type="text" placeholder="Username or Email" required>
+    <input type="password" placeholder="Password" required>
+    <select name="services">
+      <option value="" disabled selected>Select a Service</option>
+      <option value="service1">Search Engine Optimization</option>
+      <option value="service2">Web Design</option>
+      <option value="service3">IT Consultancy</option>
+    </select>
+    <button type="submit" class="button login-btn">Login</button>
+  </form>
+  <form id="signupForm" style="display: none;">
+    <!-- Add form fields for signup here -->
+    <button type="submit" class="button create-btn">Create Account</button>
+  </form>
+  <p class="footer-text">Don't have an account? <a href="#" id="showSignup">Create account</a></p>
+  <p class="footer-text" style="display: none;">Already have an account? <a href="#" id="showLogin">Login to follow</a></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
